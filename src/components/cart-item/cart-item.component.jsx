@@ -2,8 +2,8 @@ import React from 'react';
 
 import {
   CartItemContainer,
-  CartItemImage,
   ItemDetailsContainer,
+  CartItemImage,
 } from './cart-item.styles';
 
 const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
@@ -12,7 +12,7 @@ const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
     <ItemDetailsContainer>
       <span>{name}</span>
       <span>
-        {quantity} x {price}
+        {quantity} x ${price}
       </span>
     </ItemDetailsContainer>
   </CartItemContainer>

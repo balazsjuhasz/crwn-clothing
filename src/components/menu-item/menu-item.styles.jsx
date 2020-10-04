@@ -10,6 +10,7 @@ export const MenuItemContainer = styled.div`
   justify-content: center;
   border: 1px solid black;
   margin: 0 7.5px 15px;
+  overflow: hidden;
 
   &:hover {
     cursor: pointer;
@@ -61,7 +62,7 @@ export const ContentTitle = styled.span`
   color: #4a4a4a;
 `;
 
-export const ContentSubTitle = styled.span`
+export const ContentSubtitle = styled.span`
   font-weight: lighter;
   font-size: 16px;
 `;

@@ -5,8 +5,8 @@ import CustomButton from '../custom-button/custom-button.component';
 
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
-
 import { SignUpContainer, SignUpTitle } from './sign-up.styles';
+
 class SignUp extends React.Component {
   constructor() {
     super();
@@ -90,7 +90,7 @@ class SignUp extends React.Component {
             name='confirmPassword'
             value={confirmPassword}
             onChange={this.handleChange}
-            label='Conirm Password'
+            label='Confirm Password'
             required
           />
           <CustomButton type='submit'>SIGN UP</CustomButton>

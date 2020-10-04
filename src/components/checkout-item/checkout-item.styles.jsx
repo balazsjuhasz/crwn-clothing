@@ -19,6 +19,7 @@ export const ImageContainer = styled.div`
     height: 100%;
   }
 `;
+
 export const TextContainer = styled.span`
   width: 23%;
 `;
@@ -29,6 +30,7 @@ export const QuantityContainer = styled(TextContainer)`
   span {
     margin: 0 10px;
   }
+
   div {
     cursor: pointer;
   }
