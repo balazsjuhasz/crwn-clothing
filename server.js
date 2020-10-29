@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
-const { send } = require('process');
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
@@ -35,12 +34,12 @@ app.post('/payment', (req, res) => {
     amount: req.body.amount,
     currency: 'usd',
   };
-  
-  stripe.charges.create(body, (stripeErr, StripeRes) => {
+
+  stripe.charges.create(body, (stripeErr, stripeRes) => {
     if (stripeErr) {
       res.status(500).send({ error: stripeErr });
     } else {
-      res.status(200).send({ success: StripeRes });
+      res.status(200).send({ success: stripeRes });
     }
   });
 });
